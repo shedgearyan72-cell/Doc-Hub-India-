@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
    body{
-        background-color: #f4f8ff;
+        background-color: #F4F8FF;
         color:#333333;
         }
 
@@ -81,6 +81,48 @@
     font-size: 20px;
     cursor: pointer;
 }
+    .Documents{
+        display: flex;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 20px;
+        width: 90%;
+        margin: 40px, auto;
+    }
+
+    .document-card {
+   background-color:#dceeff;;
+    padding: 25px;
+    border-radius: 15px;
+
+    border: 1px solid #d6e3f5;
+
+    box-shadow: 0 4px 15px rgba(0, 80, 180, 0.12);
+}
+
+.document-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.document-card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.document-card button {
+    background: none;
+    border: none;
+    color: #1671e8;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 80, 180, 0.18);
+}
+    
+
    </style>
 </head>
    <body>
@@ -105,7 +147,20 @@
         <input type="text" placeholder="search Documents...">
         <button>🔍</button>
         </div>
-        
+    </section>
+<br>
+    <section class="Documents">
+        <div class="document-card">
+        <h2>Cast Certificate</h2>
+        <p>View process, Documents, Fees , more..</p>
+        <button>view Details →</button>
+        </div>
+
+        <div class="document-card">
+        <h2>Income-Certificate</h2>
+        <p>View process, Documents, Fees , more..</p>
+        <button>view Details →</button>
+        </div>
     </section>
 </header>
    </body>
